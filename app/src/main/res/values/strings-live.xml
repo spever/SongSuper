@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="send_gift">送了</string>
+    <string name="no_gift">当前还没收到礼物</string>
+</resources>

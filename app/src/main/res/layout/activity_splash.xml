@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.SplashActivity">
+
+    <com.tencent.qcloud.suixinbo.views.customviews.linkedviewpager.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.tencent.qcloud.suixinbo.views.customviews.linkedviewpager.NotouchLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        >
+        <com.tencent.qcloud.suixinbo.views.customviews.linkedviewpager.ViewPager
+            android:id="@+id/main_scrolllayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:layout_centerInParent="true"
+            />
+    </com.tencent.qcloud.suixinbo.views.customviews.linkedviewpager.NotouchLayout>
+</FrameLayout>

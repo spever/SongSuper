@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/live_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toppanel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/h10" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@mipmap/live_cancle"
+            android:onClick="onClick"
+            android:text=""
+            android:textColor="@color/colorTextWhite" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toppanel1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/cover_background"
+                android:onClick="onClick"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_pic_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/image"
+                android:gravity="center"
+                android:text="@string/text_live_add_title_tips"
+                android:textColor="@color/colorTextG2"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/live_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:gravity="top"
+                android:hint="@string/text_live_title_input"
+                android:lines="4"
+                android:maxLength="32"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorTextWhite"
+                android:textColorHint="@color/colorTextWhite"
+                android:textSize="@dimen/h11" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/img_lbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/icon_lbs" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/text_live_lbs_off"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="@dimen/h6" />
+
+            </LinearLayout>
+
+            <com.tencent.qcloud.suixinbo.views.customviews.CustomSwitch
+                android:id="@+id/btn_lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:layout_marginLeft="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:src="@drawable/switch_close" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="70dp"
+                android:layout_toLeftOf="@+id/imageView8"
+                android:layout_toStartOf="@+id/imageView8"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/wechat_live_unchecked" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/qq_live_unchecked" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="70dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/weibo_live_unchecked" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_publish"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/shape_live_button"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/text_publish"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/h9"
+        android:textStyle="bold" />
+
+</RelativeLayout>

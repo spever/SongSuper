@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text="1"
+        android:layout_alignBottom="@+id/iv_support_rank"
+        android:layout_alignLeft="@+id/view4"
+        android:layout_alignStart="@+id/view4" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/view2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/default_avatar"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/border"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageView5"
+        android:layout_toStartOf="@+id/imageView5"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="23dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/smallicon"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="花仙子"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星光值"
+        android:layout_above="@+id/view4"
+       android:paddingRight="12dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_start_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="345345"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+        android:textColor="@color/colorLabelRed"
+        android:layout_above="@+id/view4"
+        android:layout_toRightOf="@+id/textView2"
+         />
+
+    <Button
+        android:id="@+id/iv_support_rank"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_support"
+        android:text="支持"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+         />
+    <View
+        android:layout_margin="8dp"
+        android:layout_below="@+id/view2"
+        android:background="@mipmap/line_rank"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view4" />
+</RelativeLayout>

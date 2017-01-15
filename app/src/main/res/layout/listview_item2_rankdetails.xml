@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/no1gold"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/view2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/default_avatar"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+       android:background="@mipmap/no2vgback"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:text="花仙子" />
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_start_value"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@+id/tv_start_value"
+        android:layout_toStartOf="@+id/tv_start_value"
+        android:src="@mipmap/rengqi" />
+
+    <TextView
+        android:id="@+id/tv_start_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="345345" />
+
+    <ImageView
+        android:id="@+id/iv_support"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_start_value"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/support" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_support"
+        android:layout_margin="4dp"
+        android:background="@mipmap/line_rank" />
+</RelativeLayout>

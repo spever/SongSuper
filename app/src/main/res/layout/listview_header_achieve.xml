@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    >
+
+    <TextView
+
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:text="集齐整点赛、整天赛、周赛三个赛段的TOP10徽章，即可获得参与月赛、竞争100万梦想基金大奖的机会！徽章越多，获得月赛冠军的机会越大！现在就去打榜！"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="GO——>"
+        android:textColor="@color/colorLabelRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_alignBottom="@+id/tv_content"
+        android:layout_alignLeft="@+id/tv_content"
+        android:layout_alignStart="@+id/tv_content" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <cn.lightsky.infiniteindicator.InfiniteIndicator
+        android:id="@+id/indicator_default_circle"
+        app:indicator_type="indicator_anim_circle"
+        android:layout_height="160dp"
+        android:layout_width="match_parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+</LinearLayout>

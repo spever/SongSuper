@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="星期赛" />
+
+        <LinearLayout
+            android:id="@+id/ll_time_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="05" />
+
+            <TextView
+                android:id="@+id/tv_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text=" 月" />
+
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=" 5 " />
+
+            <TextView
+                android:id="@+id/tv_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 日  " />
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=" 21" />
+
+            <TextView
+                android:id="@+id/tv_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text=" 时" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_months_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="05" />
+
+            <TextView
+                android:id="@+id/tv_name1s_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text=" 月" />
+
+
+            <TextView
+                android:id="@+id/tv_weeks_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=" 5 " />
+
+            <TextView
+                android:id="@+id/tv_name3s_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 日  " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="05" />
+
+            <TextView
+                android:id="@+id/tv_name1s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text=" 月" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第" />
+
+            <TextView
+                android:id="@+id/tv_weeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text=" 5 " />
+
+            <TextView
+                android:id="@+id/tv_name3s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 周  " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_months_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="05" />
+
+            <TextView
+                android:id="@+id/tv_name1s_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text=" 月" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time_hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_months_hundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_square"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="百强" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/hot_progress_square">
+
+        <LinearLayout style="@style/hot_progress_title">
+
+            <TextView
+                android:id="@+id/tv_tilte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="全国星光榜"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/im_more_star"
+                style="@style/home_city_image_more" />
+        </LinearLayout>
+
+        <com.tencent.qcloud.suixinbo.views.customviews.HorizontalListView
+            android:id="@+id/horizon_listview_star"
+            style="@style/hot_progress" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/hot_progress_square">
+
+        <LinearLayout style="@style/hot_progress_title">
+
+            <TextView
+                android:id="@+id/tv_tilte1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="城市星光榜"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/im_more_popular"
+                style="@style/home_city_image_more" />
+        </LinearLayout>
+
+        <com.tencent.qcloud.suixinbo.views.customviews.HorizontalListView
+            android:id="@+id/horizon_listview_popular"
+            style="@style/hot_progress" />
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/hot_progress_square">
+
+        <LinearLayout style="@style/hot_progress_title">
+
+            <TextView
+                android:id="@+id/tv_tilte2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="KTV排行星光榜"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/im_more_ktv"
+                style="@style/home_city_image_more" />
+        </LinearLayout>
+
+        <com.tencent.qcloud.suixinbo.views.customviews.HorizontalListView
+            android:id="@+id/horizon_listview_ktv"
+            style="@style/hot_progress" />
+    </LinearLayout>
+
+</LinearLayout>

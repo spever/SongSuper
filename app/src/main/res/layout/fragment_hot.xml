@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.qcloud.suixinbo.views.customviews.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.lightsky.infiniteindicator.InfiniteIndicator
+            android:id="@+id/indicator_default_circle"
+            app:indicator_type="indicator_anim_circle"
+            android:layout_height="160dp"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/hot_radio_back"
+            android:layout_height="80dp">
+            <RadioGroup
+                android:id="@+id/rg_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:drawableTop="@drawable/selector_hour"
+                    android:id="@+id/id_auto_car"
+                    style="@style/BottomTabStyle"
+                    android:background="@drawable/selector_radio_checked"
+                    android:checked="true"
+                    android:text="整点赛"
+                    android:textColor="@color/btn_text_selector" />
+
+                <RadioButton
+                    android:drawableTop="@drawable/selector_day"
+                    android:id="@+id/id_hc_car"
+                    style="@style/BottomTabStyle"
+                    android:background="@drawable/selector_radio_checked"
+                    android:text="日 赛"
+                    android:textColor="@color/btn_text_selector" />
+
+                <RadioButton
+                    android:drawableTop="@drawable/selector_weekday"
+                    android:id="@+id/id_ck_car"
+                    style="@style/BottomTabStyle"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_radio_checked"
+                    android:text="星期赛"
+                    android:textColor="@color/btn_text_selector" />
+
+                <RadioButton
+                    android:drawableTop="@drawable/selector_month"
+                    android:id="@+id/id_crowd"
+                    style="@style/BottomTabStyle"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_radio_checked"
+                    android:text="月 赛"
+                    android:textColor="@color/btn_text_selector" />
+
+                <RadioButton
+                    android:drawableTop="@drawable/selector_baiqiang"
+                    android:id="@+id/id_speed"
+                    style="@style/BottomTabStyle"
+                    android:background="@drawable/selector_radio_checked"
+                    android:text="百强赛"
+                    android:textColor="@color/btn_text_selector" />
+            </RadioGroup>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.tencent.qcloud.suixinbo.views.customviews.MyScrollView>

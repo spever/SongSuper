@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/porchef1" android:duration="150"/>
+    <item android:drawable="@drawable/porchef2" android:duration="150"/>
+    <item android:drawable="@drawable/porchef3" android:duration="150"/>
+    <item android:drawable="@drawable/porchef4" android:duration="150"/>
+</animation-list>

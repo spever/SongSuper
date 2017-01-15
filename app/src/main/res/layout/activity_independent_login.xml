@@ -1,0 +1,224 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_backicon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/tencent_tls_ui_shadowgray" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="80dp"
+             android:background="@color/transparent"
+             android:orientation="vertical"
+             android:paddingLeft="@dimen/tencent_tls_ui_edittext_rightpadding"
+             android:paddingRight="@dimen/tencent_tls_ui_edittext_rightpadding">
+
+             <EditText
+                 android:id="@+id/username"
+                 android:layout_width="fill_parent"
+                 android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+
+                 android:drawablePadding="18dp"
+                 android:layout_marginBottom="@dimen/tencent_tls_ui_edittext_margin"
+                 android:drawableLeft="@mipmap/phone"
+                 android:background="@drawable/shape_login"
+                 android:hint="请输入手机号码"
+                 android:paddingLeft="@dimen/edit_login"
+                 android:singleLine="true" />
+
+             <EditText
+                 android:drawableLeft="@mipmap/pass"
+                 android:id="@+id/password"
+                 android:drawablePadding="12dp"
+                 android:layout_width="fill_parent"
+                 android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                 android:layout_marginBottom="@dimen/tencent_tls_ui_edittext_margin"
+                 android:background="@drawable/shape_login"
+                 android:hint="请输入密码"
+                 android:inputType="textPassword"
+                 android:paddingLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
+                 android:singleLine="true" />
+
+             <Button
+                 android:id="@+id/btn_login"
+                 android:layout_width="fill_parent"
+                 android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                 android:layout_marginBottom="20dp"
+                 android:layout_marginTop="@dimen/tencent_tls_ui_edittext_margin"
+                 android:background="@drawable/shape_login_button"
+                 android:text="登录"
+                 android:textColor="@color/tencent_tls_ui_white"
+                 android:textSize="@dimen/tencent_tls_ui_buttonFontSize" />
+
+             <FrameLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+
+
+                 <TextView
+                     android:id="@+id/registerNewUser"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center|right"
+                     android:text="注册新用户"
+                     android:textColor="@color/tencent_tls_ui_defaultButtonColor" />
+
+             </FrameLayout>
+
+         </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/user_re"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
+                android:layout_marginRight="@dimen/tencent_tls_ui_edittext_leftpadding"
+                android:background="@drawable/shape_login">
+
+                <requestFocus />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@+id/user_image_login"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="请输入账号"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/user_image_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/username"
+                    android:paddingBottom="4dip"
+                    android:paddingLeft="40dp"
+                    android:src="@mipmap/phone"
+                    android:textSize="16sp"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/password_re"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                android:layout_marginLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
+                android:layout_marginRight="@dimen/tencent_tls_ui_edittext_leftpadding"
+                android:background="@drawable/shape_login">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/user_image_passwd"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="center|left"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:textColorHint="@color/text_gray1"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/user_image_passwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/password"
+                    android:paddingBottom="4dip"
+                    android:paddingLeft="36dp"
+                    android:src="@mipmap/pass"
+                    android:textSize="16sp"
+
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tencent_tls_ui_edittext_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/tencent_tls_ui_edittext_leftpadding"
+                android:layout_marginRight="@dimen/tencent_tls_ui_edittext_leftpadding"
+                android:layout_marginTop="@dimen/tencent_tls_ui_edittext_margin"
+                android:background="@drawable/shape_login_button"
+                android:text="登录"
+                android:textColor="@color/tencent_tls_ui_white"
+                android:textSize="@dimen/tencent_tls_ui_buttonFontSize" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+
+                <TextView
+                    android:id="@+id/registerNewUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:text="立即注册"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_forget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="忘记密码"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/relativeLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

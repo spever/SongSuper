@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/calendar" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView4"
+            android:text="7月" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image"
+            android:layout_alignStart="@+id/image"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="6dp"
+            android:text="21日" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="48dp"
+            android:background="#A6A6A6" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/view_1"
+            android:layout_marginLeft="32dp"
+            android:src="@mipmap/orange_dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_2"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4"
+            android:text=" 21点\n整点赛"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_line"
+            android:layout_alignLeft="@+id/view_1"
+            android:layout_alignStart="@+id/view_1"
+            android:layout_below="@+id/image"
+            android:background="#A6A6A6" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:background="@color/background_gray1"
+            android:layout_below="@+id/view_1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="整点赛全国TOP榜单第38名，获得234星光值增值！"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/relativeLayout"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="距月赛TOP1还差54321星光增光值。>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.5"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="直播打榜！竞争100万梦想基金！GO>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/relative"
+            android:layout_alignStart="@+id/relative"
+            android:layout_below="@+id/relative" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:background="#A6A6A6" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/view_3"
+            android:layout_marginLeft="32dp"
+            android:src="@mipmap/orange_dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_21"
+            android:text=" 21日\n日赛"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/view_21"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_line1"
+            android:layout_alignLeft="@+id/view_3"
+            android:layout_below="@+id/image1"
+            android:background="#A6A6A6" />
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view_3"
+            android:background="@color/background_gray1">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="21日赛城市TOP榜单第38名，获得234星光值增值！"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/relativeLayout2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="距月赛TOP1还差54321星光增光值。>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.5"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="直播打榜！竞争100万梦想基金！GO>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/relative2"
+            android:layout_alignStart="@+id/relative2"
+            android:layout_below="@+id/relative2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+
+        <View
+            android:id="@+id/view_31"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:background="#A6A6A6" />
+
+        <ImageView
+            android:id="@+id/image12"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/view_31"
+            android:layout_marginLeft="32dp"
+            android:src="@mipmap/orange_dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_22"
+            android:text=" 本周\n周赛"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/view_22"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_line2"
+            android:layout_alignLeft="@+id/view_31"
+            android:layout_below="@+id/image12"
+            android:background="#A6A6A6" />
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view_31"
+            android:background="@color/background_gray1">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="本周周赛赛城市TOP榜单第38名，获得234星光值增值！"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/relativeLayout3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="距月赛TOP1还差54321星光增光值。>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.5"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="直播打榜！竞争100万梦想基金！GO>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/relative3"
+            android:layout_alignStart="@+id/relative3"
+            android:layout_below="@+id/relative3" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingRight="20dp">
+
+
+        <View
+            android:id="@+id/view_33"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:background="#A6A6A6" />
+
+        <ImageView
+            android:id="@+id/image13"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/view_33"
+            android:layout_marginLeft="32dp"
+            android:src="@mipmap/orange_dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_23"
+            android:text=" 本月赛\n成绩"
+            android:textSize="10sp" />
+
+        <View
+            android:id="@+id/view_23"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_line3"
+            android:layout_alignLeft="@+id/view_33"
+            android:layout_below="@+id/image13"
+            android:background="#A6A6A6" />
+
+        <RelativeLayout
+            android:id="@+id/relative4"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view_33"
+            android:background="@color/background_gray1">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="您参与“唱超月赛之12月赛”总计获得12355星光值增值！"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/relativeLayout4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="总成绩全国排名第8位。>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.5"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="直播打榜！竞争100万梦想基金！GO>"
+                    android:textColor="@color/colorLabelRed" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/relative4"
+            android:layout_alignStart="@+id/relative4"
+            android:layout_below="@+id/relative4" />
+
+    </RelativeLayout>
+</LinearLayout>
