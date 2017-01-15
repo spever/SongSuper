@@ -22,16 +22,6 @@
 
 
 
-##最新版本App可从应用宝上下载安装（应用名：随心播）
-
-http://android.myapp.com/myapp/detail.htm?apkName=com.tencent.qcloud.suixinbo
-
-
-
-
-
-
-
 ###优化配置项
 
 1.退后台恢复 ：android后台进程不被杀掉，可正常恢复，画面/声音正常；
